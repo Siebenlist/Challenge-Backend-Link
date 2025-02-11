@@ -12,3 +12,21 @@ Este repositorio contiene el desarrollo del MVP de una API para la gestión de p
 - **DNI válido sin préstamo asociado:** Se mostrará un mensaje indicando que no hay crédito disponible.
 - **DNI válido con préstamo disponible:** Se mostrará el monto del préstamo disponible.
 
+## Como ejecutar este proyecto en local
+
+- Abrir una terminal y ejecutar el siguiente comando para clonar el proyecto en tu máquina:
+```
+git clone https://github.com/Siebenlist/Challenge-Backend-Link
+```
+- Acceder a la carpeta del proyecto
+```
+cd carpeta-proyecto
+```
+- Instalar las dependencias
+```
+mvn clean install
+```
+- Ejectuar el proyecto
+```
+mvn spring-boot:run
+```
