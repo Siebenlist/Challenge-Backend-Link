@@ -1,9 +1,9 @@
 package com.example.backend.service;
 
-import com.example.backend.dto.EmpleadoDTO;
-import com.example.backend.dto.EmpleadoResponse;
+import com.example.backend.api.dto.EmpleadoDTO;
+import com.example.backend.api.dto.EmpleadoResponse;
 import com.example.backend.models.Empleado;
-import com.example.backend.repository.EmpleadoRepository;
+import com.example.backend.models.repository.EmpleadoRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,8 +1,8 @@
-package com.example.backend.controller;
+package com.example.backend.api.controller;
 
-import com.example.backend.dto.AutenticacionRequest;
-import com.example.backend.dto.EmpleadoResponse;
-import com.example.backend.dto.ListEmpleadoReponse;
+import com.example.backend.api.dto.AutenticacionRequest;
+import com.example.backend.api.dto.EmpleadoResponse;
+import com.example.backend.api.dto.ListEmpleadoReponse;
 import com.example.backend.service.EmpleadoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

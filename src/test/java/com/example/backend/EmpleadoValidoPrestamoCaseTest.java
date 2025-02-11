@@ -1,10 +1,10 @@
 package com.example.backend;
 
-import com.example.backend.controller.EmpleadoController;
-import com.example.backend.dto.AutenticacionRequest;
-import com.example.backend.dto.EmpleadoResponse;
+import com.example.backend.api.controller.EmpleadoController;
+import com.example.backend.api.dto.AutenticacionRequest;
+import com.example.backend.api.dto.EmpleadoResponse;
 import com.example.backend.models.Empleado;
-import com.example.backend.repository.EmpleadoRepository;
+import com.example.backend.models.repository.EmpleadoRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

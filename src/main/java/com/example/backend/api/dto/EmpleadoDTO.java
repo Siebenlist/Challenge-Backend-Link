@@ -1,4 +1,4 @@
-package com.example.backend.dto;
+package com.example.backend.api.dto;
 
 import com.example.backend.models.Empleado;
 
