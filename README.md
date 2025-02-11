@@ -8,7 +8,7 @@ Este repositorio contiene el desarrollo del MVP de una API para la gestión de p
 
 ## Casos de uso principales:
 
-- **DNI no reconocido:** El usuario no puede al sistema.
+- **DNI no reconocido:** El usuario no puede acceder al sistema.
 - **DNI válido sin préstamo asociado:** Se mostrará un mensaje indicando que no hay crédito disponible.
 - **DNI válido con préstamo disponible:** Se mostrará el monto del préstamo disponible.
 
