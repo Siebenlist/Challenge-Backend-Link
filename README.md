@@ -16,7 +16,7 @@ Este repositorio contiene el desarrollo del MVP de una API para la gestión de p
 ![Diagrama de flujo](https://github.com/user-attachments/assets/fcacdb67-6655-43d0-9ac2-e6854f1d101c)
 
 
-## Como ejecutar este proyecto en local
+## Cómo ejecutar este proyecto en local
 
 - Abrir una terminal y ejecutar el siguiente comando para clonar el proyecto en tu máquina:
 ```
