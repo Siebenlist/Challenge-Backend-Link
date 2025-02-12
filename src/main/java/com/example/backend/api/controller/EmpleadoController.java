@@ -16,16 +16,16 @@ public class EmpleadoController {
     @Autowired
     private EmpleadoService empleadoService;
 
-    @PostMapping("/validar")
+    @PostMapping("/validacion")
     public ResponseEntity<EmpleadoResponse> autenticacion(@RequestBody AutenticacionRequest request){
 
         EmpleadoResponse empleadoResponse = empleadoService.autenticacion(request.getDni());
 
-        if(empleadoResponse.getCodigo() == 406){
+        if(!empleadoResponse.isPrestamoDisponible()){
             return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).body(empleadoResponse);
         }
 
-        if(empleadoResponse.getCodigo() == 404){
+        if(!empleadoResponse.isEmpleadoEncontrado()){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).body(empleadoResponse);
         }
 

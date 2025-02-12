@@ -7,25 +7,22 @@ public class EmpleadoResponse {
     private boolean empleadoInvalido;
     private Double importe;
     private String respuesta;
-    private Integer codigo;
 
     public EmpleadoResponse() {}
 
-    public EmpleadoResponse(Boolean empleadoInvalido, String dni, String respuesta, Integer codigo) {
+    public EmpleadoResponse(Boolean empleadoInvalido, String dni, String respuesta) {
         this.empleadoInvalido = empleadoInvalido;
         this.empleadoEncontrado = false;
         this.respuesta = respuesta;
-        this.codigo = codigo;
     }
 
-    public EmpleadoResponse(boolean prestamoDisponible, boolean empleadoEncontrado, Double importe, String respuesta, Integer codigo){
+    public EmpleadoResponse(boolean prestamoDisponible, boolean empleadoEncontrado, Double importe, String respuesta){
         this.dni = dni;
         this.prestamoDisponible = prestamoDisponible;
         this.empleadoEncontrado = empleadoEncontrado;
         this.empleadoInvalido = false;
         this.importe = importe;
         this.respuesta = respuesta;
-        this.codigo = codigo;
     }
 
     public boolean isEmpleadoEncontrado() {
@@ -68,11 +65,4 @@ public class EmpleadoResponse {
         this.respuesta = respuesta;
     }
 
-    public Integer getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(Integer codigo) {
-        this.codigo = codigo;
-    }
 }

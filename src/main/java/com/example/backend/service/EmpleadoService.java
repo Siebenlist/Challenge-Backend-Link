@@ -34,15 +34,15 @@ public class EmpleadoService {
             if(empleado.getImporte() == null){
                 empleado.setFechaVisualizacion(LocalDate.now());
                 empleadoRepository.save(empleado);
-                return new EmpleadoResponse(false, true, null, "Prestamo invalido para el empleado con dni: " + dni, 406);
+                return new EmpleadoResponse(false, true, null, "Prestamo invalido para el empleado con dni: " + dni);
             }
 
             empleado.setFechaVisualizacion(LocalDate.now());
             empleadoRepository.save(empleado);
-            return new EmpleadoResponse(true, true, empleado.getImporte(), "Prestamo disponible con el importe: " + empleado.getImporte(), 200);
+            return new EmpleadoResponse(true, true, empleado.getImporte(), "Prestamo disponible con el importe: " + empleado.getImporte());
         }
 
-        return new EmpleadoResponse(true, dni, "Empleado no encontrado con el dni: " + dni, 404);
+        return new EmpleadoResponse(true, dni, "Empleado no encontrado con el dni: " + dni);
 
     }
 
